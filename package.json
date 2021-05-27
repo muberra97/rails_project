@@ -9,6 +9,7 @@
     "@rails/ujs": "^6.0.0",
     "@rails/webpacker": "5.4.0",
     "bootstrap": "^4.6.0",
+    "bootstrap-sass": "^3.4.1",
     "react-bootstrap": "^0.32.4",
     "trix": "^1.2.0",
     "turbolinks": "^5.2.0",

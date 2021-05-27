@@ -2,7 +2,8 @@ require "active_support/core_ext/integer/time"
 
 Rails.application.configure do
   config.hosts << "9e31ac3f8909461a8dc14ac070313a48.vfs.cloud9.eu-central-1.amazonaws.com"
-  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+  config.action_mailer.default_url_options = { host: 'https://9e31ac3f8909461a8dc14ac070313a48.vfs.cloud9.eu-central-1.amazonaws.com' }
+  config.action_mailer.delivery_method = :test
 
   # Settings specified here will take precedence over those in config/application.rb.
 
