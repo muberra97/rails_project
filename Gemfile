@@ -31,8 +31,9 @@ end
 
 
 gem "haml-rails", "~> 2.0"
-gem 'font-awesome-sass', '~> 5.15.1'
+gem 'font-awesome-sass'
 gem 'simple_form'
 gem 'faker'
 gem 'devise'
 gem 'friendly_id', '~> 5.4.0'
+gem 'ransack'
