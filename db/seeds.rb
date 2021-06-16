@@ -1,5 +1,15 @@
 #User.create!(email: 'admin@example.com', password: 'admin@example.com', password_confirmation: 'admin@example.com')
 
+#user = User.new(
+#  email: 'admin8@example.com',
+#  password: 'admin8@example.com',
+#  password_confirmation: 'admin8@example.com'
+#  )
+#user.skip_confirmation!
+#user.save!
+
+PublicActivity.enabled = false
+
 30.times do
   Course.create!([{
     title: Faker::Educator.course_name,
@@ -12,3 +22,4 @@
     
   }])
 end
+PublicActivity.enabled = true
