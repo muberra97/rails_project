@@ -59,20 +59,40 @@
 
 %hr
 %h2
-  Popolar courses
+  .fa.fa-user-graduate
+  Continue Learning
 .card-columns
-  - @courses.each do |course|
+  - @purchased_courses.each do |course|
     = render 'courses/course', course: course
+    
 %hr
 %h2
+  .fa.fa-chart-line
+  Popular Courses
+.card-columns
+  - @popular_courses.each do |course|
+    = render 'courses/course', course: course
+    
+%hr
+%h2
+  .fa.fa-star
   Top rated courses
 .card-columns
-  - @courses.each do |course|
+  - @top_rated_courses.each do |course|
     = render 'courses/course', course: course
+    
 %hr
 %h2
+  .fa.fa-clock
   Latest courses
 .card-columns
   - @latest_couses.each do |course|
     = render 'courses/course', course: course
+    
 %hr
+%h2
+  .fa.fa-comment
+  What our students have to say
+.card-columns
+  - @latest_good_reviews.each do |enrollment|
+    = render 'enrollments/enrollment', enrollment: enrollment

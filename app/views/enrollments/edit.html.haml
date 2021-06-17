@@ -1,7 +1,19 @@
-%h1 Editing enrollment
+- content_for :title do
+    GraduationProject
+    \|
+    Editing
+    = @enrollment
 
-= render 'form'
+.card
+    .card-header
+        %h3
+            .text-warning.fa.fa-star
+            Add a Review
+    .card-body
 
-= link_to 'Show', @enrollment
-\|
-= link_to 'Back', enrollments_path
+        = render 'form'
+    .card-footer
+
+        = link_to 'Show Review', @enrollment
+        \|
+        = link_to 'Back to Course', course_path(@enrollment.course)
